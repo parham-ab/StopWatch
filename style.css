@@ -1,0 +1,64 @@
+/* css resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  outline: none;
+}
+/* fonts */
+@font-face {
+  font-family: digital;
+  src: url(./assets/fonts/digital-7.ttf);
+}
+body {
+  background-color: rgb(29, 29, 29);
+  color: rgb(255, 0, 0);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+p {
+  font-family: digital;
+  font-size: 90px;
+}
+.btn-holder button {
+  width: 100px;
+  margin: 70px 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.start {
+  background-color: rgb(46, 207, 46);
+  transition: all 0.3s;
+}
+.start:hover {
+  background-color: rgb(49, 156, 49);
+  transition: all 0.3s;
+}
+.stop {
+  background-color: rgb(223, 62, 62);
+  transition: all 0.3s;
+}
+.stop:hover {
+  background-color: rgb(165, 47, 47);
+  transition: all 0.3s;
+}
+.reset {
+  background-color: rgb(255, 251, 0);
+  transition: all 0.3s;
+}
+.reset:hover {
+  background-color: rgb(197, 194, 0);
+  transition: all 0.3s;
+}
