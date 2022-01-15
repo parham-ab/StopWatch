@@ -29,6 +29,9 @@ p {
   font-family: digital;
   font-size: 90px;
 }
+.btn-holder {
+  display: flex;
+}
 .btn-holder button {
   width: 100px;
   margin: 70px 5px;

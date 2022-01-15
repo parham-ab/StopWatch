@@ -36,6 +36,7 @@ function starter() {
   stopBtn.addEventListener("click", stopper);
   function stopper() {
     clearInterval(x);
+    startBtn.style.display = "block";
   }
   // reset button
   resetBtn.addEventListener("click", reseter);
@@ -44,5 +45,9 @@ function starter() {
     h.innerHTML = `00`;
     m.innerHTML = `00`;
     s.innerHTML = `00`;
+  }
+  // disappear start button after click on it
+  if (x) {
+    startBtn.style.display = "none";
   }
 }
