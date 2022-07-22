@@ -14,8 +14,8 @@
   src: url(./assets/fonts/digital-7.ttf);
 }
 body {
-  background-color: rgb(29, 29, 29);
-  color: rgb(255, 0, 0);
+  background-color: #111;
+  color: rgb(255 192 49);
 }
 .container {
   display: flex;
@@ -32,36 +32,45 @@ p {
 .btn-holder {
   display: flex;
 }
-.btn-holder button {
-  width: 100px;
-  margin: 70px 5px;
+.start,
+.stop,
+.reset {
   border: none;
+  margin: 40px;
+  font-size: 20px;
   border-radius: 5px;
-  font-size: 22px;
   cursor: pointer;
-  font-weight: bold;
+}
+i {
+  font-size: 30px;
 }
 .start {
-  background-color: rgb(46, 207, 46);
-  transition: all 0.3s;
+  color: #e35858;
+  transition: all 0.3s ease;
 }
 .start:hover {
-  background-color: rgb(49, 156, 49);
-  transition: all 0.3s;
+  color: rgb(214, 60, 60);
+  transition: all 0.3s ease;
+}
+.start:hover {
+  transition: all 0.3s ease;
 }
 .stop {
-  background-color: rgb(223, 62, 62);
-  transition: all 0.3s;
+  color: #e35858;
+  transition: all 0.3s ease;
 }
 .stop:hover {
-  background-color: rgb(165, 47, 47);
-  transition: all 0.3s;
+  color: rgb(214, 60, 60);
+  transition: all 0.3s ease;
 }
 .reset {
-  background-color: rgb(255, 251, 0);
-  transition: all 0.3s;
+  color: #56bccd;
+  transition: all 0.3s ease;
 }
 .reset:hover {
-  background-color: rgb(197, 194, 0);
-  transition: all 0.3s;
+  color: #0fc1e1;
+  transition: all 0.3s ease;
+}
+.buttons {
+  display: flex;
 }

@@ -37,6 +37,7 @@ function starter() {
   function stopper() {
     clearInterval(x);
     startBtn.style.display = "block";
+    startBtn.classList.add("animate__animated", "animate__fadeInDown");
   }
   // reset button
   resetBtn.addEventListener("click", reseter);
